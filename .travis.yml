@@ -2,3 +2,9 @@ language: java
 script: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 jdk: 
   - oraclejdk9
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: git: https://github.com/ on L-G5080-SYSTEM at 21-8-29 20:53
+  on:
+    branch: master
